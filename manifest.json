@@ -1,7 +1,10 @@
 {
-  "name": "Teste Grande",
-  "short_name": "Testinho",
+  "id": "./",
+  "name": "testao",
+  "short_name": "testinho",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "icons": []
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb"
 }
