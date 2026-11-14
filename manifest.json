@@ -1,0 +1,7 @@
+{
+  "name": "Teste Grande",
+  "short_name": "Testinho",
+  "start_url": "./",
+  "display": "standalone",
+  "icons": []
+}
