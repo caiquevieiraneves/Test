@@ -1,6 +1,6 @@
-body{
+html, body{
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  height: 100lvh;
+  width: 100%;
   background-color: rgb(255, 255, 255);
 }
