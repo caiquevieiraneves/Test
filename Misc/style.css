@@ -26,9 +26,4 @@ html, body{
   aspect-ratio: 1.3;
   height: var(--Df_Value_0);
   border-radius: var(--Df_Value_Border);
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.377);
-  transition: box-shadow 0.25s ease;
-}
-.page_0__menu:hover{
-  box-shadow: 3px 7px 5px rgba(0, 0, 0, 0.377);
 }
