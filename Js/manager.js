@@ -1,17 +1,16 @@
-const Vaults = {}
-function Lock(Name){
-    if(Vaults[Name]){
-        return true
-    }
-    return false
-}
+const Vaults = new Map();
+const Tags = new Map();
 export class Manager{
-    static set(Name){
-        if(Lock(Name)){console.error(`"${Name}" Duplicado`); return;}
-        Vaults[Name] = {Value:0}
-        return 1;
+    static set(Name, Value){
+        Vaults.set(Name,Value)
     }
-    static getraw(){
-        return Vaults
+    static getRange(Params){
+
+    }
+    static getMap(){
+        return Vaults;
+    }
+    static getVaults(Params){
+        return Vaults.keys();
     }
 }

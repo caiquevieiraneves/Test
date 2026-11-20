@@ -1,6 +1,8 @@
 import {Manager} from "./manager.js"
 
-Manager.set("Inter")
-Manager.set("Wallet")
+Manager.set("Inter",{Value:0})
+Manager.set("Wallet",{Value:0})
 
-console.log(Manager.getraw())
+for(let i of Manager.getVaults()){
+    console.log(i)
+}
