@@ -7,13 +7,60 @@
     --Df_Value_Border: 2%;
 }
 
+/*Global*/
+
+.DF_JustifyScreen{
+  width: min(100%, 200lvh);
+  height: 100%;
+}
+
+.DF_Shadow_Inset_Top{
+  box-shadow: inset 0px 10px 10px -10px rgba(0,0,0,0.4);
+}
+
+.DF_BarH{
+  width: calc(100% - 50px);
+  margin-left: 25px;
+  height: 2px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.DF_BarH_Content{
+  display: flex;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  height: 2px;
+  gap: 3lvw;
+}
+.DF_BarH_Content_Node{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+.DF_BarH_Content_Node_Dot{
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.4) 12px, transparent 2px);
+  background-repeat: repeat-x;
+  background-size: 30px 2px;
+}
+
+.DF_BarW{
+  width: 4px;
+  margin-Top: 10px;
+  height: calc(100% - 20px);;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/*Document*/
+
 html, body{
   margin: 0;
   height: 100lvh;
   width: 100%;
   background-color: rgb(255, 255, 255);
 }
-.page_0{
+.page{
   display: flex;
   width: 100%;
   height: 100%;
@@ -21,31 +68,21 @@ html, body{
   align-items: center;
   justify-content: center;
 }
-.page_0__container{
-  background-color: var(--Df_Color_1);
+.page_0__container_h{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Df_Color_0);
+}
+.page_0__container_w{
+  display: flex;
+  background-color: var(--Df_Color_0);
+}
+.page_0__container_h_node{
+  background-color: var(--Df_Color_0);
   height: 100%;
-  width: min(100%, 120lvh);
-  z-index: 1;
 }
-.page_0__container__test{
-  background-color: color-mix(in srgb, var(--Df_Color_1), rgb(0,0,0) 50%);
-  height: 50px;
-  width: 50px
-}
-.page_0__sidearea{
-  background-color: color-mix(in srgb, var(--Df_Color_1), rgb(0,0,0) 25%);
-  height: 100%;
-  flex: 1;
-  
-  z-index: 2;
-}
-.page_0__sidearea__test{
-  background-color: color-mix(in srgb, var(--Df_Color_1), rgb(255,0,0) 50%);
-  height: 100%;
-  width: 75px;
-}
-.page_0__sidearea__test2{
-  background-color: rgb(0,255,0);
-  height: 50px;
-  width: 100px;
+.page_0__container_w_node{
+  background-color: var(--Df_Color_0);
+  width: 100%;
+  /*box-shadow: inset 0px 10px 10px 2px rgba(0,0,0,0.4);*/
 }
