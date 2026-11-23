@@ -45,6 +45,10 @@
   background-size: 30px 2px;
 }
 
+.DF_Text{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .DF_BarW{
   width: 4px;
   margin-Top: 10px;
