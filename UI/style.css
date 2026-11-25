@@ -1,0 +1,48 @@
+:root{
+    /*Page*/
+        --page_default_ratio: 1.5;
+    /*Pallete 0*/
+        --color_primary: #ffffff;
+        --color_secondary: #d8d8d8;
+}
+
+body{
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.body__line_divisor{
+    width: calc(100% - 20px);
+    height: 2px;
+    --line_second_size: 20px;
+    background-image: linear-gradient(to right, var(--color_secondary) 100%),
+    repeating-linear-gradient(to left, var(--color_secondary) 0px, var(--color_secondary) var(--line_second_size), transparent var(--line_second_size), transparent calc(2 * var(--line_second_size)));
+    --gap: 20px;
+    background-size: calc(50% - var(--gap)) 100%, calc(50% - var(--gap)) 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    width: calc(100cqh * var(--page_default_ratio) - 20px);
+    max-width: calc(100% - 40px);
+}
+
+.page{
+    margin: 0px;
+    height: 100%;
+    width: calc(100cqh * var(--page_default_ratio));
+    max-width: 100%;
+    background-color: var(--color_primary);
+}
+
+.page--flex{
+    display: flex;
+}
+
+.topbar{
+    margin: 0px;
+    height: 150px;
+    width: calc(100cqh * var(--page_default_ratio));
+    max-width: 100%;
+    background-color: var(--color_primary);
+}
